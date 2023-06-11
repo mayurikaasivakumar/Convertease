@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compress Your PDF!</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+    body{
+        margin: 0%;
+    }
+    nav{
+        font-family: 'Silkscreen', cursive;
+        display: flex;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        justify-content: space-evenly;
+        background-color: black;
+    }
+    nav a{
+        color: white;
+        text-decoration: none; 
+    }
+    .content:hover{
+        border-bottom: 2px solid white;
+    }
+    span a{
+        margin-left: -50%;
+    }
+    nav button{
+        font-family: 'Silkscreen', cursive;
+        background-color: #c83cb9;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+    h1{
+        display: flex;
+        font-family: 'Zen Antique', serif;
+        justify-content: center;
+    }
+    p{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: bolder;
+        text-align: center;
+    }
+    button{
+        font-family: 'Silkscreen', cursive;
+        background-color: #c83cb9;
+        border: none;
+        color: white;
+        border-radius: 20px;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+    button:hover{
+        background-color: #9b298f;
+        cursor: pointer;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+    .text{
+        margin-top: 10%;
+    }
+    input[type="file"] { 
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+      }
+    label[for="file"] {
+        font-family: 'Silkscreen', cursive;
+        background-color: #c83cb9;
+        border: none;
+        color: white;
+        border-radius: 20px;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+    label[for="file"]:hover {
+        background-color: #9b298f;
+    }
+    img{
+        float: right;
+        width: 40%;
+    }
+    @media only screen and (max-width: 640px)  {
+        nav {
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+        }
+        nav a {
+            margin: 0%;
+            padding: 10px 0;
+            display: block;
+            text-align: center;
+            border-bottom: 1px solid white;
+        }
+        nav button a{
+            margin: 1%;
+            padding: 1%;
+            display: block;
+            text-align: center;
+            border-bottom: 0px;
+        }
+        img{
+            position: relative;
+            width: 100%;
+        }
+        h1,p{
+            margin: 0%;
+            position: relative;
+            width: 100%;
+            padding: 1%;
+        }
+    }
+    @media only screen and (min-width: 1024px){
+        nav{
+            display: flex;
+            width: 100%;
+        }
+        nav span{
+            margin-left: 4%;
+        }
+        img{
+            width: 50%;
+        }
+    }
+</style>
+<body>
+    <nav>
+        <span><a href="index.html">ConvertEase</a></span>
+        <a href="merge.html" class="content">Merge PDF</a>
+        <a href="split.html" class="content">Split PDF</a>
+        <a href="compress.html" class="content">Compress PDF</a>
+        <a href="convert.html" class="content">Convert PDF</a>
+        <br><button><a href="login.html">Login</a></button><br>
+        <button><a href="signup.html">Register</a></button>
+    </nav>
+    <img src="compress.png" alt="Compress">
+    <div class="text">
+        <h1>Compress PDF files</h1>
+        <p>Reduce file size while optimizing for maximal PDF quality.</p>
+        <div class="button">
+            <input type="file" id="file"/>
+            <label for="file">Select PDF files</label>
+        </div>
+        <p id="drop">or drop your PDF's here!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset your password</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+    body{
+        margin: 0%;
+    }
+    nav{
+        font-family: 'Silkscreen', cursive;
+        display: flex;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        justify-content: space-evenly;
+        background-color: black;
+    }
+    nav a{
+        color: white;
+        text-decoration: none; 
+    }
+    .content:hover{
+        border-bottom: 2px solid white;
+    }
+    span a{
+        margin-left: -50%;
+    }
+    nav button{
+        font-family: 'Silkscreen', cursive;
+        background-color: #c83cb9;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+    h1{
+        text-align: center;
+    }
+    form{
+        font-family: 'Silkscreen', cursive;
+        width:35rem;
+        margin-top: 12.5%;
+        margin-left: 30%;
+        justify-content: center;
+        color:whitesmoke;
+        background-color: black;
+        border-radius: 20px;
+        padding: 20px 25px;
+        -webkit-box-shadow: 10px 10px 101px -34px rgba(0,0,0,0.46);
+        -moz-box-shadow: 10px 10px 101px -34px rgba(0,0,0,0.46);
+        box-shadow: 10px 10px 101px -34px rgba(0,0,0,0.46);
+    }
+    input[type=text]{
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 5px;
+        padding: 15px 18px;
+        box-sizing: border-box;
+    }
+    .reset{
+        font-family: 'Silkscreen', cursive;
+        background-color: #c83cb9;
+        color: white;
+        padding: 14px 20px;
+        border-radius: 5px;
+        margin: 7px 0;
+        width: 100%;
+        font-size: 18px;
+    }
+    .reset a{
+        text-decoration: none;
+        color: white;
+    }
+    .reset:hover{
+        background-color: #9b298f;
+        cursor: pointer;
+    }
+    @media only screen and (max-width: 640px)  {
+        nav { position: relative;
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+        }
+        nav a {
+            margin: 0%;
+            padding: 10px 0;
+            display: block;
+            text-align: center;
+            border-bottom: 1px solid white;
+        }
+        nav button a{
+            margin: 1%;
+            padding: 1%;
+            display: block;
+            text-align: center;
+            border-bottom: 0px;
+        }
+        form{
+            width: 100%;
+            margin: 15%;
+            position: relative;
+            width: 25rem;
+        }
+        video{
+            opacity: 0%;
+        }
+    }
+    @media only screen and (min-width: 1024px){
+        nav{
+            display: flex;
+            width: 100%;
+        }
+        nav span{
+            margin-left: 4%;
+        }
+        form{
+            position: absolute;
+            margin-top: 13%;
+            margin-left: 35%;
+            width: 25rem;
+        }
+    }
+</style>
+<body>
+    <nav>
+        <span><a href="index.html">ConvertEase</a></span>
+        <a href="merge.html" class="content">Merge PDF</a>
+        <a href="split.html" class="content">Split PDF</a>
+        <a href="compress.html" class="content">Compress PDF</a>
+        <a href="convert.html" class="content">Convert PDF</a>
+        <br><button><a href="login.html">Login</a></button><br>
+        <button><a href="signup.html">Register</a></button>
+    </nav>
+    <form action="reset_message.html">
+        <div class="headingsContainer">
+            <h3>Forgot your password?</h3>
+        </div>
+        <div class="mainContainer">
+            <label for="text">E-mail</label>
+            <input type="text" placeholder="someone@gmail.com" name="text" required>
+            <button class="reset"><a href="/WebTech/reset_message.html">Reset</a></button>
+        </div>
+    </form>
+</body>
+</html>

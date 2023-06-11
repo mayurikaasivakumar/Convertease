@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+body{
+    margin: 0%;
+}
+nav{
+    font-family: 'Silkscreen', cursive;
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-content: space-evenly;
+    background-color: black;
+}
+nav a{
+    color: white;
+    text-decoration: none; 
+}
+.content:hover{
+    border-bottom: 2px solid white;
+}
+span a{
+    margin-left: -50%;
+}
+nav button{
+    font-family: 'Silkscreen', cursive;
+    background-color: #c83cb9;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+img{
+    float: right;
+    width: 40%;
+}
+h1{
+    margin-top: 10%;
+    margin-left: 10%;
+    display: flex;
+    position: relative;
+    width: 30%;
+    font-family: 'Zen Antique', serif;
+    border-bottom: 2px solid #c83cb9;
+}
+p{
+    margin-left: 10%;
+    position: absolute;
+    width: 30%;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bolder;
+    color: #c83cb9;
+}
+@media only screen and (max-width: 640px)  {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+    nav a {
+        margin: 0%;
+        padding: 10px 0;
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    nav button a{
+        margin: 1%;
+        padding: 1%;
+        display: block;
+        text-align: center;
+        border-bottom: 0px;
+    }
+    img{
+        margin-right: 25%;
+    }
+    h1,p{
+        margin: 0%;
+        position: relative;
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 1024px){
+    nav{
+        display: flex;
+        width: 100%;
+    }
+    nav span{
+        margin-left: 4%;
+    }
+    .text p{
+        position: relative;
+        margin-top: -10%;
+        padding: 0%;
+    }
+    .text h1{
+        margin: 10%;
+    }
+    img{
+        width: 40%;
+    }
+}
+</style>
+<body>
+    <nav>
+        <span><a href="index.html">ConvertEase</a></span>
+        <a href="merge.html" class="content">Merge PDF</a>
+        <a href="split.html" class="content">Split PDF</a>
+        <a href="compress.html" class="content">Compress PDF</a>
+        <a href="convert.html" class="content">Convert PDF</a>
+        <br><button><a href="login.html">Login</a></button><br>
+        <button><a href="signup.html">Register</a></button>
+    </nav>
+    <img src="index.png" alt="Index">
+    <div class="text">
+        <h1>Every tool you need to work with PDFs in one place!</h1>
+        <p>Free and easy to use! Merge, split, compress, convert, rotate, unlock and watermark PDFs with just a few clicks.</p>
+    </div>
+</body>
+</html>

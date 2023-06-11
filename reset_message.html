@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-mail Sent!</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+    body{
+        margin: 0%;
+    }
+    nav{
+        font-family: 'Silkscreen', cursive;
+        display: flex;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        justify-content: space-evenly;
+        background-color: black;
+    }
+    nav a{
+        color: white;
+        text-decoration: none; 
+    }
+    .content:hover{
+        border-bottom: 2px solid white;
+    }
+    span a{
+        margin-left: -50%;
+    }
+    nav button{
+        font-family: 'Silkscreen', cursive;
+        background-color: #c83cb9;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+    h1{
+        font-family: 'Silkscreen', cursive;
+        text-align: center;
+    }
+    p{
+        font-family: 'Source Code Pro', monospace;
+        text-align: center;
+        color: #c83cb9;
+        font-weight: bolder;
+    }
+    .message{
+        margin-top: 15%;
+    }
+    @media only screen and (max-width: 640px)  {
+        nav { position: relative;
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+        }
+        nav a {
+            margin: 0%;
+            padding: 10px 0;
+            display: block;
+            text-align: center;
+            border-bottom: 1px solid white;
+        }
+        nav button a{
+            margin: 1%;
+            padding: 1%;
+            display: block;
+            text-align: center;
+            border-bottom: 0px;
+        }
+        form{
+            width: 100%;
+            margin: 15%;
+            position: relative;
+            width: 25rem;
+        }
+        video{
+            opacity: 0%;
+        }
+    }
+    @media only screen and (min-width: 1024px){
+        nav{
+            display: flex;
+            width: 100%;
+        }
+        nav span{
+            margin-left: 4%;
+        }
+    }
+</style>
+<body>
+    <nav>
+        <span><a href="index.html">ConvertEase</a></span>
+        <a href="merge.html" class="content">Merge PDF</a>
+        <a href="split.html" class="content">Split PDF</a>
+        <a href="compress.html" class="content">Compress PDF</a>
+        <a href="convert.html" class="content">Convert PDF</a>
+        <br><button><a href="login.html">Login</a></button><br>
+        <button><a href="signup.html">Register</a></button>
+    </nav>
+    <div class="message">
+        <h1>Hello User,</h1>
+        <p>Your request for resetting your password has been sent to your given e-mail. Please check your e-mail.</p>
+    </div>
+</body>
+</html>
